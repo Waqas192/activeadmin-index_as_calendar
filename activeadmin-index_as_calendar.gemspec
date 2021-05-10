@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency "activeadmin"
 
   s.add_dependency 'momentjs-rails'
-  s.add_dependency 'fullcalendar-rails', '~> 3.1'
+  s.add_dependency 'fullcalendar-rails'
 
   s.add_development_dependency "sqlite3", "~> 0"
 end
