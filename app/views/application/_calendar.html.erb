@@ -4,19 +4,12 @@
 	$(function(){
     // Default options for fullCalendar goes here
     default_options = {
-      selectable: true,
       lang: 'es',
       header: {
         left: 'title',
         center: '',
         right: 'prev,today,next month,agendaWeek,agendaDay'
       },
-      dateClick: function(info) {
-        alert('clicked ' + info.dateStr);
-      },
-      select: function(info) {
-        alert('selected ' + info.startStr + ' to ' + info.endStr);
-      }
       eventRender: function( event, element, view ){
         element.qtip({
           content: event.tooltip,
